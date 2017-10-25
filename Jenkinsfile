@@ -1,6 +1,9 @@
 //Test for checkin
 catchError {
     node ('sl-vm') {  
+		stage('clean workspace') {
+			cleanws()
+		}
 		stage('checkout') {
 			checkout scm
 		}
