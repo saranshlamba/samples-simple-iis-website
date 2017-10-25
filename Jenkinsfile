@@ -1,14 +1,12 @@
 //Test for checkin
 catchError {
     node ('sl-vm') {  
-       stage('BUILD-UI') {
-        checkout scm
-//        bat 'build.presentation.bat'
-       }
-//       stage('BUILD-SERVICES'){
-//          checkout scm
-//          bat 'build.services.bat'
-//       }
+		stage('checkout') {
+			checkout scm
+		}
+		stage('zip') {
+			powershell: get-service
+		}
     }
 }
 
