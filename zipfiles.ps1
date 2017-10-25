@@ -9,5 +9,5 @@ Copy-Item .\packages.config .\webfiles -force
 Copy-Item .\readme.md .\webfiles -force
 Copy-Item .\web.config .\webfiles -force
 Copy-Item .\Web.Debug.config .\webfiles -force
-Move-Item .\webfiles .\tos3
+Move-Item .\webfiles .\tos3 -force
 [System.IO.Compression.ZipFile]::CreateFromDirectory(".\tos3", "tos3.zip")
