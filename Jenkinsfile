@@ -2,7 +2,7 @@
 catchError {
     node ('sl-vm') {  
 		stage('clean workspace') {
-			cleanws()
+			cleanWs()
 		}
 		stage('checkout') {
 			checkout scm
