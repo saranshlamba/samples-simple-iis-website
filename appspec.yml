@@ -1,0 +1,9 @@
+version: 0.0
+os: windows 
+files:
+ - source: \
+   destination: c:\temp
+hooks:  
+  AfterInstall:
+    - location: \install.bat
+      timeout: 3600  
