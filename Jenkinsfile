@@ -5,7 +5,7 @@ catchError {
 			checkout scm
 		}
 		stage('zip') {
-			powershell: get-service
+			powershell get-service
 		}
     }
 }
