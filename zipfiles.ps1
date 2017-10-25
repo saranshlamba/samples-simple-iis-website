@@ -1,5 +1,5 @@
 set-executionpolicy unrestricted
-$ErrorActionPreference = stop
+$ErrorActionPreference = "Stop"
 Add-Type -Assembly "System.IO.Compression.FileSystem";
 New-Item -ItemType directory -Path .\tos3
 Copy-Item .\default.aspx .\tos3 -force
