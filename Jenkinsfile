@@ -6,6 +6,7 @@ catchError {
 		}
 		stage('zip') {
 			bat "powershell.exe -command get-service"
+			bat "powershell.exe -file zipfiles.ps1"
 		}
     }
 }
