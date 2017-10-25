@@ -5,6 +5,7 @@
 }
 
 set-executionpolicy unrestricted
+$ErrorActionPreference = "SilentlyContinue"
 Import-Module WebAdministration
 Import-Module -Name C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ServerManager
 function InstallfeatureRoles
@@ -17,8 +18,9 @@ function InstallfeatureRoles
 
 InstallfeatureRoles
 iisreset /stop
-Remove-Item IIS:\AppPools\webdemopool -ErrorAction SilentlyContinue
+
 Remove-WebApplication -Name webdemo -Site "Default Web Site" -ErrorAction SilentlyContinue
+Remove-Item IIS:\AppPools\webdemopool -ErrorAction SilentlyContinue -Recurse -Force 
 Remove-Item C:\inetpub\wwwroot\webdemo -Force -Recurse -ErrorAction SilentlyContinue
 
 Copy-Item -Path c:\temp\webfiles -Destination C:\inetpub\wwwroot\webdemo -Recurse -Force
