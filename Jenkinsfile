@@ -5,7 +5,7 @@ catchError {
 			checkout scm
 		}
 		stage('zip') {
-			bat "powershell.exe -command get-service"
+			bat "powershell.exe -command set-executionpolicy unrestricted"
 			bat "powershell.exe -file zipfiles.ps1"
 		}
     }
