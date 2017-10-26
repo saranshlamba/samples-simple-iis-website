@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">Hello World Changed two three four five hurray 'nice work'</h1>
+                    <h1 class="text-center">Hello World</h1>
                 </div>
             </div>
             <div class="row">
