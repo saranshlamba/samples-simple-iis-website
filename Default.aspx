@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center">
-                        If you are seeing this message, the website is working correctly and this is cool!! Enjoy the awesomeness
+                        If you are seeing this message, the change has already been deployed.
                 </div>
             </div>
         </div>
