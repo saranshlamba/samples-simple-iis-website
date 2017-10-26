@@ -11,7 +11,7 @@ catchError {
 			bat "powershell.exe -command set-executionpolicy unrestricted"
 			bat "powershell.exe -file zipfiles.ps1"
 		}
-		stage('upload to s3') {
+		stage('upload bits and update stack') {
 			bat "powershell.exe -command set-executionpolicy unrestricted"
 			bat "powershell.exe -file uploadtos3.ps1"
 		}			

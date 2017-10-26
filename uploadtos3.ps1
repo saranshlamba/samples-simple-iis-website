@@ -14,3 +14,12 @@ Update-CFNStack -StackName sbxdemo -Capability CAPABILITY_IAM -Parameter @(
 @{ParameterKey="TagOperatingSystem"; UsePreviousValue="True"},
 @{ParameterKey="TagOwner"; UsePreviousValue="True"}
 ) -TemplateURL 'https://s3-us-west-2.amazonaws.com/s3demo2017/demo.json' -Region us-west-2
+
+
+while ($ss.StackStatus.Value -ne 'UPDATE_COMPLETE') 
+{
+    Write-Host 'Stack Still Updating, please wait';
+	start-sleep 10;
+    $ss=Get-CFNStack -Region us-west-2 -StackName sbxdemo | select StackStatus
+}
+write-host 'Stack Update Complete'
