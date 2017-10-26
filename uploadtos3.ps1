@@ -1,4 +1,5 @@
-﻿set-executionpolicy unrestricted
+﻿#This file uploads cloud formation template and source files from workspace to s3 and then updates the stack.
+set-executionpolicy unrestricted
 $ErrorActionPreference = "Stop"
 $date=Get-Date -Format yyyy_M_dd_H_m_ss
 Write-S3Object -BucketName s3demo2017 -Key tos3.$date.zip -File .\tos3.zip -ProfileName slamba -Region us-west-2
@@ -20,6 +21,6 @@ while ($ss.StackStatus.Value -ne 'UPDATE_COMPLETE')
 {
     Write-Host 'Stack Still Updating, please wait';
 	start-sleep 10;
-    $ss=Get-CFNStack -Region us-west-2 -StackName sbxdemo | select StackStatus
+    $ss=Get-CFNStack -Region us-west-2 -StackName sbxdemo | Select-Object StackStatus
 }
 write-host 'Stack Update Complete'

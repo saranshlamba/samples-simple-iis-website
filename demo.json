@@ -918,7 +918,7 @@
 						{
 							"Ref": "TagEnvironment"
 						},
-						"management",
+						"web",
 						{
 							"Ref": "AWS::StackName"
 						}]]

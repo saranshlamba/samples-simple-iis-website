@@ -1,3 +1,4 @@
+#This copies and zips all the necessary files needed for codedeploy and iis
 set-executionpolicy unrestricted
 $ErrorActionPreference = "Stop"
 Add-Type -Assembly "System.IO.Compression.FileSystem";
