@@ -21,6 +21,6 @@ while ($ss.StackStatus.Value -ne 'UPDATE_COMPLETE')
 {
     Write-Host 'Stack Still Updating, please wait';
 	start-sleep 10;
-    $ss=Get-CFNStack -Region us-west-2 -StackName sbxdemo | Select-Object StackStatus
+    $ss=Get-CFNStack -Region us-west-2 -StackName disneydemo | Select-Object StackStatus
 }
 write-host 'Stack Update Complete'
