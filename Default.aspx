@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center">
-                        If you are seeing this message, the change has already been deployed.
+                        If you are seeing this message, the change has already been deployed. this is a change.
                 </div>
             </div>
         </div>
