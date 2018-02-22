@@ -12,13 +12,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center">This is a demo for CI/CD pipeline using Jenkins Pipeline, GitHub post commit hook, cloud formation and code deploy</h2>
+                    <h2 class="text-center">This is a demo for CI/CD pipeline using Jenkins pipeline, GitHub post commit hook, cloud formation and code deploy</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center">
-                        If you are seeing this message, the change has already been deployed. AUTOMATION!
+                        If you are seeing this message, the change has already been deployed. AUTOMATION! Demo
                 </div>
             </div>
         </div>
