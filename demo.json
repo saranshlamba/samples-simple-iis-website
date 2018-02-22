@@ -389,7 +389,7 @@
 	"Mappings": {
 		"AMI": {			
 			"us-west-2": {
-				"WebServer": "ami-f318de8b"
+				"WebServer": "ami-a5d053dd"
 			}
 		}			
 	},
