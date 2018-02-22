@@ -5,7 +5,8 @@ $date=Get-Date -Format yyyy_M_dd_H_m_ss
 Write-S3Object -BucketName s3demo2017 -Key tos3.$date.zip -File .\tos3.zip -ProfileName slamba -Region us-west-2
 Write-S3Object -BucketName s3demo2017 -Key demo.json -File .\demo.json -ProfileName slamba -Region us-west-2
 Set-AWSCredentials -ProfileName slamba
-Update-CFNStack -StackName sldemo -Capability CAPABILITY_IAM -Parameter @(
+$sname = sldemo
+Update-CFNStack -StackName $sname -Capability CAPABILITY_IAM -Parameter @(
 @{ParameterKey="CIDR"; UsePreviousValue="True"},@{ParameterKey="Email"; UsePreviousValue="True"},@{ParameterKey="InstallerPath"; ParameterValue="tos3.$date.zip"},
 @{ParameterKey="InstanceType"; UsePreviousValue="True"},@{ParameterKey="KeyPairName"; UsePreviousValue="True"},
 @{ParameterKey="MaximumInstances"; UsePreviousValue="True"},@{ParameterKey="MinimumInstances"; UsePreviousValue="True"},
@@ -21,6 +22,6 @@ while ($ss.StackStatus.Value -ne 'UPDATE_COMPLETE')
 {
     Write-Host 'Stack Still Updating, please wait';
 	start-sleep 10;
-    $ss=Get-CFNStack -Region us-west-2 -StackName disneydemo | Select-Object StackStatus
+    $ss=Get-CFNStack -Region us-west-2 -StackName $sname | Select-Object StackStatus
 }
 write-host 'Stack Update Complete'
