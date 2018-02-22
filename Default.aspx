@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center">
-                        If you are seeing this message, the change has already been deployed. AUTOMATION.
+                        If you are seeing this message, the change has already been deployed. AUTOMATION!
                 </div>
             </div>
         </div>
