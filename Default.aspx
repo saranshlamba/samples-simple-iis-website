@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">This is a demo for CI/CD pipeline using Jenkins, GitHub post commit hook, cloud formation and code deploy</h1>
+                    <h2 class="text-center">This is a demo for CI/CD pipeline using Jenkins Pipeline, GitHub post commit hook, cloud formation and code deploy</h2>
                 </div>
             </div>
             <div class="row">
