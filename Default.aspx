@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello WorWorld</title>
+    <title>Ready for the demo</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">Change One and Two and three  and FOUR and FIVE</h1>
+                    <h1 class="text-center">This is a demo for CI/CD pipeline using Jenkins, GitHub post commit hook, cloud formation and code deploy</h1>
                 </div>
             </div>
             <div class="row">
